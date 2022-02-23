@@ -7,18 +7,15 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * description:
- * date: 2022-02-22 16:31
+ * date: 2022-02-23 11:00
  * author: waifaicheung
  * version: 1.0 <br>
  */
 @Configuration
-public class ApplicationContextConfig {
-
+public class ApplicationConfig {
     @Bean
-    //RestTemplate 的负载均衡能力
     @LoadBalanced
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
-
 }
